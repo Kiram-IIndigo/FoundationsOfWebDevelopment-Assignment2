@@ -1,0 +1,64 @@
+#gallery {
+  margin: 20px;
+  flex-wrap: wrap;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gallery h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+#gallery .gallery-thumbnails img {
+  width: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modal-image {
+  width: 700px;
+  border-radius: 10px;
+  border: 3px solid #fff;
+}
+#gallery-modal {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#modal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+.gallery-thumbnails {
+  display: flex;
+  justify-content: space-around;
+}
