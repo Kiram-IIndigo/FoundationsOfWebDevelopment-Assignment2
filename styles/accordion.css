@@ -1,0 +1,113 @@
+.accordion-btn {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ddd;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+}
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+.accordion {
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  padding: 15px 20px;
+  background: linear-gradient(120deg, #f6d365, #fda085);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+  background: linear-gradient(120deg, #fda085, #f6d365);
+}
+
+.accordion-content {
+  padding: 15px 20px;
+  background: #f9f9f9;
+  display: none;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#accordion-menu {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+}
+
+#accordion-menu h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.accordion-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-btn:hover {
+  background-color: #0056b3;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: #555;
+  font-size: 1rem;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+}
+
+.accordion-content.active {
+  display: block;
+  max-height: 200px;
+  padding: 10px 20px;
+}
