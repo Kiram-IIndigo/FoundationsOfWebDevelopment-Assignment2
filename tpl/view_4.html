@@ -1,5 +1,4 @@
 <style>
-  /* Centering the profile container */
   #profile {
     background-color: #ffffff;
     border-radius: 10px;
@@ -8,23 +7,20 @@
     max-width: 400px;
     width: 100%;
     text-align: center;
-    display: block; /* Visible when the user is logged in */
+    display: block;
 
-    /* Flexbox for centering */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  /* Profile Heading */
   #profile h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #444;
   }
 
-  /* Name and Email Text */
   #profile p {
     font-size: 16px;
     margin: 10px 0;
@@ -35,7 +31,6 @@
     color: #333;
   }
 
-  /* Profile Image */
   #profile-image {
     border-radius: 50%;
     margin-top: 10px;
@@ -46,9 +41,8 @@
     transform: scale(1.1);
   }
 
-  /* Logout Button Styling */
   #logout-button {
-    background-color: #f44336; /* Red color for logout */
+    background-color: #f44336;
     color: white;
     border: none;
     border-radius: 5px;
@@ -61,17 +55,17 @@
   }
 
   #logout-button:hover {
-    background-color: #d32f2f; /* Darker red on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background-color: #d32f2f;
+    transform: scale(1.05);
   }
 
   #logout-button:active {
-    background-color: #b71c1c; /* Even darker red on click */
-    transform: scale(1); /* Reset the size when clicked */
+    background-color: #b71c1c;
+    transform: scale(1);
   }
 
   #logout-button:focus {
-    outline: none; /* Remove focus outline */
+    outline: none;
   }
 </style>
 
@@ -90,17 +84,14 @@
   <h1>You are not logged in!</h1>
   <p>Redirecting you to the login page...</p>
 </div>
+<script></script>
 <script>
-  // Function to check if user is logged in
-</script>
-<script>
-  // Logout button functionality to clear localStorage
   document
     .getElementById("logout-button")
     .addEventListener("click", function () {
-      localStorage.clear(); // Clear all data from localStorage
+      localStorage.clear();
       alert("Logged out successfully!");
-      // Optionally, you can also redirect the user to a login page or refresh the page
-      window.location.hash = "#page1"; // Redirect to login or home page
+
+      window.location.hash = "#page1";
     });
 </script>

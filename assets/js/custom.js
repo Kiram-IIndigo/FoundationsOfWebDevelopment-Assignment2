@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("main#spapp > section").height($(document).height() - 60);
 
-  var app = $.spapp({ pageNotFound: "error_404" }); // initialize
+  var app = $.spapp({ pageNotFound: "error_404" });
 
   const navLinks = {
     page1: [document.getElementById("navpage1")],
@@ -26,7 +26,6 @@ $(document).ready(function () {
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
 
     if (loggedInUser) {
-      // User is logged in, show their data
       document.getElementById("profile").style.display = "block";
       document.getElementById("redirect-message").style.display = "none";
 
@@ -34,13 +33,11 @@ $(document).ready(function () {
       document.getElementById("email").textContent = loggedInUser.email;
       document.getElementById("profile-image").src = loggedInUser.image;
     } else {
-      // User is not logged in, redirect to #page1
       window.location.hash = "#page1";
       window.alert("You need to log in to see this view");
     }
   }
 
-  // define routes
   app.route({
     view: "page1",
     onCreate: function () {
@@ -74,11 +71,9 @@ $(document).ready(function () {
     onReady: function () {
       updateActiveLink("page4");
 
-      // Check login status on page load
       checkLoginStatus();
     },
   });
 
-  // run app
   app.run();
 });

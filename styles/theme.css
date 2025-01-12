@@ -21,49 +21,46 @@ body.dark-theme .accordion-content {
   background: #1e1e1e;
 }
 
-/* Theme Switcher Container */
 #theme-switcher {
   display: flex;
-  gap: 10px; /* Spacing between buttons */
+  gap: 10px;
   align-items: center;
 }
 
-/* Dark Mode Button */
 #dark-mode-btn {
   padding: 8px 12px;
   font-size: 14px;
-  color: #fff; /* White text for contrast */
-  background-color: #333; /* Dark background */
-  border: 1px solid #444; /* Slightly lighter border */
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #444;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #dark-mode-btn:hover {
-  background-color: #555; /* Lighter on hover */
+  background-color: #555;
 }
 
 #dark-mode-btn:active {
-  background-color: #222; /* Darker on active */
+  background-color: #222;
 }
 
-/* Light Mode Button */
 #light-mode-btn {
   padding: 8px 12px;
   font-size: 14px;
-  color: #333; /* Dark text for contrast */
-  background-color: #fff; /* Light background */
-  border: 1px solid #ccc; /* Light border */
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #light-mode-btn:hover {
-  background-color: #eee; /* Slightly darker on hover */
+  background-color: #eee;
 }
 
 #light-mode-btn:active {
-  background-color: #ddd; /* Darker on active */
+  background-color: #ddd;
 }

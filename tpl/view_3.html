@@ -20,21 +20,21 @@
 <script src="scripts/api.js" defer></script>
 <script>
   document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
     if (email && password) {
-      // Fetch users from the JSON file
+      
       fetch('./data/users.json')
         .then(response => response.json())
         .then(users => {
-          // Check if the entered email and password match any user
+          
           const user = users.find(user => user.email === email && user.password === password);
           
           if (user) {
-            // If valid, save user data to localStorage
+            
             localStorage.setItem("loggedInUser", JSON.stringify(user));
             alert("User successfully logged in and data saved!");
             window.location.hash = "#page4"

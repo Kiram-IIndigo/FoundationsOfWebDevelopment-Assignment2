@@ -26,77 +26,73 @@
       }
 
       header {
-        background: linear-gradient(
-          to right,
-          yellow,
-          orange
-        ); /* Gradient background */
-        padding: 10px 20px; /* Add padding around the header */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add slight shadow */
+        background: linear-gradient(to right, yellow, orange);
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
 
       nav[role="navigation"] {
-        display: flex; /* Use flexbox for alignment */
-        justify-content: space-between; /* Space out the items */
-        align-items: center; /* Align items vertically */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
       nav[role="navigation"] ul {
-        list-style: none; /* Remove bullet points */
+        list-style: none;
         margin: 0;
         padding: 0;
-        display: flex; /* Arrange items horizontally */
+        display: flex;
       }
 
       nav[role="navigation"] ul li {
-        margin: 0 15px; /* Add spacing between list items */
+        margin: 0 15px;
       }
 
       nav[role="navigation"] ul li a {
-        text-decoration: none; /* Remove underline */
-        color: #000; /* White text */
-        font-size: 16px; /* Set font size */
-        font-family: Arial, sans-serif; /* Clean font */
-        padding: 8px 15px; /* Add padding inside links */
-        border-radius: 5px; /* Rounded corners */
-        transition: background-color 0.3s ease; /* Smooth hover effect */
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
       }
 
       .active,
       nav[role="navigation"] ul li a:hover {
-        background-color: darkorange; /* Slightly lighter background on hover */
-        color: white; /* Lightened text color on hover */
+        background-color: darkorange;
+        color: white;
       }
 
       nav[role="navigation"] ul li a:active {
-        background-color: #444; /* Darker color when active */
+        background-color: #444;
       }
 
       #theme-switcher {
-        display: flex; /* Arrange buttons horizontally */
-        gap: 10px; /* Spacing between buttons */
+        display: flex;
+        gap: 10px;
       }
 
       #dark-mode-btn,
       #light-mode-btn {
         padding: 8px 12px;
         font-size: 14px;
-        color: #333; /* Text color */
-        background-color: #fff; /* Button background */
-        border: 1px solid #ccc; /* Button border */
-        border-radius: 5px; /* Rounded corners */
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease, color 0.3s ease;
       }
 
       #dark-mode-btn:hover,
       #light-mode-btn:hover {
-        background-color: #eee; /* Hover effect */
+        background-color: #eee;
       }
 
       #dark-mode-btn:active,
       #light-mode-btn:active {
-        background-color: #ddd; /* Active effect */
+        background-color: #ddd;
       }
     </style>
   </head>
