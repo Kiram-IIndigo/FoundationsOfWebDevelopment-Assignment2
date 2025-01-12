@@ -1,0 +1,106 @@
+<style>
+  /* Centering the profile container */
+  #profile {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: block; /* Visible when the user is logged in */
+
+    /* Flexbox for centering */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Profile Heading */
+  #profile h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #444;
+  }
+
+  /* Name and Email Text */
+  #profile p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+  }
+
+  #profile p strong {
+    color: #333;
+  }
+
+  /* Profile Image */
+  #profile-image {
+    border-radius: 50%;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  #profile-image:hover {
+    transform: scale(1.1);
+  }
+
+  /* Logout Button Styling */
+  #logout-button {
+    background-color: #f44336; /* Red color for logout */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  #logout-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+
+  #logout-button:active {
+    background-color: #b71c1c; /* Even darker red on click */
+    transform: scale(1); /* Reset the size when clicked */
+  }
+
+  #logout-button:focus {
+    outline: none; /* Remove focus outline */
+  }
+</style>
+
+<div id="profile" style="display: none">
+  <h1>User Profile</h1>
+  <p><strong>Name:</strong> <span id="name"></span></p>
+  <p><strong>Email:</strong> <span id="email"></span></p>
+  <p>
+    <strong>Image:</strong><br />
+    <img id="profile-image" src="" alt="Profile Image" width="100" />
+  </p>
+  <button type="button" id="logout-button">Logout</button>
+</div>
+
+<div id="redirect-message">
+  <h1>You are not logged in!</h1>
+  <p>Redirecting you to the login page...</p>
+</div>
+<script>
+  // Function to check if user is logged in
+</script>
+<script>
+  // Logout button functionality to clear localStorage
+  document
+    .getElementById("logout-button")
+    .addEventListener("click", function () {
+      localStorage.clear(); // Clear all data from localStorage
+      alert("Logged out successfully!");
+      // Optionally, you can also redirect the user to a login page or refresh the page
+      window.location.hash = "#page1"; // Redirect to login or home page
+    });
+</script>
