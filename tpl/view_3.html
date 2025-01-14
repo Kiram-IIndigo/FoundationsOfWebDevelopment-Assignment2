@@ -1,0 +1,54 @@
+<section id="form-section">
+  <h1>Contact Form</h1>
+  <form id="contact-form">
+    <input type="text" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button type="submit">Submit</button>
+
+  </form>
+</section>
+
+<section id="weather-section">
+  <h1>Weather Data</h1>
+  <form id="weather-form">
+    <label for="city-input">Enter City:</label>
+    <input type="text" id="city-input" placeholder="City Name" required />
+    <button type="submit">Get Weather</button>
+  </form>
+  <div id="weather"></div>
+</section>
+<script src="scripts/api.js" defer></script>
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+
+    if (email && password) {
+      
+      fetch('./data/users.json')
+        .then(response => response.json())
+        .then(users => {
+          
+          const user = users.find(user => user.email === email && user.password === password);
+          
+          if (user) {
+            
+            localStorage.setItem("loggedInUser", JSON.stringify(user));
+            alert("User successfully logged in and data saved!");
+            window.location.hash = "#page4"
+          } else {
+            alert("Invalid email or password.");
+          }
+        })
+        .catch(error => {
+          console.error("Error fetching user data:", error);
+          alert("Failed to fetch user data.");
+        });
+    } else {
+      alert("Please fill in both fields.");
+    }
+  });
+</script>
+</script>

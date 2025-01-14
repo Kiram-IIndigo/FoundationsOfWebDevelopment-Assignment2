@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "password": "123",
+    "image": "https://i0.wp.com/www.ghanacelebrities.com/wp-content/uploads/2017/07/Black-woma.jpeg?resize=759%2C594"
+  },
+  {
+    "name": "Bob Smith",
+    "email": "bob.smith@example.com",
+    "password": "b0bSecure@456",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTUzMjA0MzQxMF5BMl5BanBnXkFtZTcwODA3ODY3Mg@@._V1_.jpg"
+  },
+  {
+    "name": "Charlie Brown",
+    "email": "charlie.brown@example.com",
+    "password": "Ch@rlie789!",
+    "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnYD3VnhRGfRz6-N_OCSE6kqdfNOhvJaS9o7a31kTQCBR9QAXVCbHKxz16gpPY7DokaD3w2vrumppshFOz1t08XA"
+  },
+  {
+    "name": "Diana Adams",
+    "email": "diana.adams@example.com",
+    "password": "DianaPassword!123",
+    "image": "https://statics.koreanbuilds.net/tile_200x200/Evelynn.webp"
+  },
+  {
+    "name": "Evan Green",
+    "email": "evan.green@example.com",
+    "password": "Ev@n_456secure",
+    "image": "https://thumbs.dreamstime.com/z/handsome-scottish-man-sword-pipe-38167282.jpg"
+  }
+]
